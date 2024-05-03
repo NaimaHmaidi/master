@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+    
+}
+
+.container-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.container {
+    background: #f5f5f7;
+    padding: 1rem;
+    margin: 10rem 10px; /* Ajoute une marge à gauche et à droite pour créer un espace entre les backlogs */
+    border-radius: 5px;
+    flex-grow: -1; 
+     /* Définir une hauteur maximale pour activer la barre de défilement */
+     max-height: 580px; /* Ajustez la hauteur maximale selon vos besoins */
+
+     /* Activer la barre de défilement uniquement lorsque nécessaire */
+     overflow-y: auto;
+    /* Pour que tous les conteneurs enfants aient la même largeur */
+}
+
+.container:last-child {
+    margin-right: 0; /* Supprime la marge à droite du dernier conteneur */
+}
+
+.container h1 {
+    text-align: center;
+    font-family: 'Monoton';
+    color: rgb(12, 12, 12);
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    word-spacing: 5px;
+    letter-spacing: 5px;
+    padding: 2.4rem 0;
+}
+ .inputeField{
+    width: 100%;
+    padding: 5px 1rem;
+    background:  #3d79b1;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+ .inputeField input {
+    background: transparent;
+    padding: 10px;
+    color: rgb(251, 248, 248);
+    font-size: 1rem;
+ }
+.inputeField input::placeholder {
+    color: rgb(253, 249, 249);
+}
+.inputeField button {
+    background: #3d79b1;
+    color: #fff;
+    font-size: 2rem;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    cursor: pointer;
+    transform: all 0.5s;
+}
+.container h1{
+    text-align: center;
+    font-family: 'Monoton';
+    color: rgb(8, 8, 8);
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    word-spacing: 5px;
+    
+
+}
+button:hover {
+    transform: rotate(90deg);
+}
+.toDoList{
+    margin-top: 2rem
+}
+.toDoList span {
+    color: rgb(10, 10, 10);
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+}
+.toDoList .list-items{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.list-items .items{
+    background-color: #44446b;
+    border-radius: 10px;
+    padding: 14px;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(186, 186, 186);
+}
+input[type='checkbox']{
+    padding: 5px;
+    cursor: pointer;
+}
+.items-text{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    
+}
+.items-text div{
+    color: white;
+    overflow: hidden;
+}
+.notify{
+    text-align: center;
+    color: rgb(161, 160, 160);
+}
+.dark-mode {
+    background-color: #1f1f1f;
+    color: #ffffff;
+}
+
+.delete-icon{
+    width: 40px;
+    height: 40px;
+    font-size: 27px !important;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 5px;
+    display: block;
+}
+.delete-icon:hover{
+    background: #3d79b1;
+    transition: 0.3s;
+}
+.isChecked{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+.stats{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: #282851;
+}
